@@ -71,6 +71,7 @@ if __name__ == "__main__":
     parser.add_argument("--nms_thres", type=float, default=0.5, help="iou thresshold for non-maximum suppression")
     parser.add_argument("--n_cpu", type=int, default=8, help="number of cpu threads to use during batch generation")
     parser.add_argument("--img_size", type=int, default=416, help="size of each image dimension")
+    parser.add_argument("--augment", type=bool, default=False, help="test in type8 dataset")
     opt = parser.parse_args()
     print(opt)
 
@@ -99,6 +100,7 @@ if __name__ == "__main__":
         nms_thres=opt.nms_thres,
         img_size=opt.img_size,
         batch_size=8,
+        augment = opt.augment
     )
 
     print("Average Precisions:")
