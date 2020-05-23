@@ -1,0 +1,8 @@
+classes= 5
+#train  = /home/pjreddie/data/coco/trainvalno5k.txt
+train  = ./data/train.txt
+valid  = ./data/val.txt
+#valid = data/coco_val_5k.list
+names = data/marine_coco.names
+backup = backup
+eval=coco
