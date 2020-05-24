@@ -135,17 +135,18 @@ if __name__ == "__main__":
 
             # domain loss
             features = features[mask]
+            features = ReverseLayerF.apply(features,alpha)
             domain_pred = d_classifier(features)
             
             loss_d = loss_domain(domain_pred,domain_labels)
-            total_loss = loss + penalty + alpha * loss_d
+            total_loss = loss + penalty + loss_d
 
             total_loss.backward()
 
             if batches_done % opt.gradient_accumulations:
                 # Accumulates gradient before each step
                 optimizer.step()
-                torch.nn.utils.clip_grad_norm_(model.parameters(), 1)
+                torch.nn.utils.clip_grad_norm_(model.parameters(), 2)
                 optimizer.zero_grad()
 
             # ----------------
