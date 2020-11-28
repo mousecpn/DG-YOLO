@@ -33,6 +33,8 @@ URPC2019: https://drive.google.com/open?id=1n8Rpgx3xF84HO6PXpfPrRtTMtVSuOaBs
 
 Synthetic URPC2019: https://drive.google.com/open?id=1FzIuZJuCHna4Dn_FLBeR5IFztCJBJ6VD
 
+checkpoint: https://drive.google.com/file/d/1n3e9R1zeJjOtNSMpNY0cVsfHqucmTOVe/view?usp=sharing
+
 After downloading all datasets, create URPC2019 document.
 
 ```
