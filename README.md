@@ -93,7 +93,7 @@ $ python test.py --weights_path <path/to/checkpoints> --batch_size 32 --augment 
 ### Citation
 
 ```
-$ @inproceedings{liu2020towards,
+@inproceedings{liu2020towards,
   title={Towards domain generalization in underwater object detection},
   author={Liu, Hong and Song, Pinhao and Ding, Runwei},
   booktitle={2020 IEEE International Conference on Image Processing (ICIP)},
