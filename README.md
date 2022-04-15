@@ -89,3 +89,16 @@ Test in type8 validation set
 ```
 $ python test.py --weights_path <path/to/checkpoints> --batch_size 32 --augment True
 ```
+
+### Citation
+
+```
+$ @inproceedings{liu2020towards,
+  title={Towards domain generalization in underwater object detection},
+  author={Liu, Hong and Song, Pinhao and Ding, Runwei},
+  booktitle={2020 IEEE International Conference on Image Processing (ICIP)},
+  pages={1971--1975},
+  year={2020},
+  organization={IEEE}
+}
+```
